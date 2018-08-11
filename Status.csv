@@ -2,3 +2,4 @@
 2	PROCESSING	Review is being processed
 3	PUBLISHED	Review is published
 4	ARCHIVED	Review is archived
+4	ERROR	Review is not processed due to error
