@@ -2,6 +2,11 @@ FROM library/postgres
 
 RUN apt-get update
 RUN apt-get -y install unzip ruby dos2unix
+RUN apt-get install nano
+RUN apt-get install telnet
+
+RUN export POSTGRES_USER=postgres
+RUN export POSTGRES_PASSWORD=postgres
 
 RUN mkdir /data
 COPY install.sql /data/
