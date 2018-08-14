@@ -679,7 +679,7 @@ SELECT 'Copying data into Production.ProductProductPhoto';
 SELECT 'Copying data into Production.Status';
 \copy Production.Status FROM '/data/Status.csv' DELIMITER E'\t' CSV;
 SELECT 'Copying data into Production.ProductReviewStatus';
-\copy Production.ProductReviewStatus FROM '/data/ProductReviewStatus.csv' DELIMITER E'\t' CSV;
+\copy Production.ProductReviewStatus (productreviewid, statusid, startdate, enddate, islast, comments) FROM '/data/ProductReviewStatus.csv' DELIMITER E'\t' CSV;
 
 -- This doesn't work:
 -- SELECT 'Copying data into Production.ProductReview';
